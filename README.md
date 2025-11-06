@@ -45,17 +45,6 @@ This project builds a transparent and data-driven methodology to:
 
 The final goal is to support sustainable, equitable energy solutions through measurable insights.
 
-## 📌 Project Overview
-NYC experiences significant disparities in electricity consumption across boroughs—especially within low-income, vulnerable communities. This project builds a transparent and data-driven methodology to:
-
-- ✅ Identify developments that exceed borough consumption norms  
-- ✅ Simulate expected usage and calculate potential savings  
-- ✅ Forecast long-term usage under multiple scenarios  
-- ✅ Prioritize funding for high-impact interventions  
-- ✅ Evaluate ROI for solar + battery installations  
-
-The final goal is to support sustainable, equitable energy solutions through measurable insights.
-
 ---
 
 ## 🔬 Methodology
@@ -171,23 +160,6 @@ Includes:
 
 ---
 
-## 🗂 Repository Structure
-
-
-🗂 Repository Structure
-project/
-├─ data/
-│  ├─ raw/
-│  └─ processed/
-├─ output/
-├─ notebooks/
-│  └─ Electric_Consumption_Analysis.ipynb
-├─ src/
-│  └─ dashboard_script.py
-├─ assets/
-├─ README.md
-├─ LICENSE
-└─ .gitignore
 
 🪪 License
 
