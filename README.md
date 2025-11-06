@@ -159,7 +159,12 @@ Includes:
 - Visualizations & exports  
 
 ---
-
+### 📊 Dashboard Visualization
+The key analytical results and ROI projections of this project can be visually explored through the dashboard below.
+![Dashboard Preview](images/dashboard1.png)
+![Dashboard Preview](images/dashboard2.png)
+![Dashboard Preview](images/dashboard3.png)
+![Dashboard Preview](images/dashboard4.png)
 
 🪪 License
 
