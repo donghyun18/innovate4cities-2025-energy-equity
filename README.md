@@ -165,7 +165,6 @@ Includes:
 To launch the interactive dashboard, place the `dashboard_script.py` file in the same directory as your final Excel output  
 (e.g., `energy_efficiency_report_data.xlsx`), then run the following command in your terminal:
 
-```bash
 streamlit run dashboard_script.py
 
 ### 📊 Dashboard Visualization
