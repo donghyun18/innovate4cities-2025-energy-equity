@@ -5,17 +5,12 @@ This project analyzes municipal electricity consumption, demographic vulnerabili
 Using a structured methodology, the analysis identifies overconsuming developments, simulates potential savings, forecasts long-term trends, and evaluates cost-effectiveness through ROI analysis.
 
 The final output includes:
-✅ An interactive Streamlit dashboard
-✅ A master Excel report
-✅ Forecasting results
-✅ ROI evaluation
+✅ An interactive Streamlit dashboard<br>
+✅ A master Excel report<br>
+✅ Forecasting results<br>
+✅ ROI evaluation<br>
 ✅ Processed datasets used in investment planning
 
-🚀 Live Dashboard Demo (Optional)
-
-👉 Live App:
-https://your-streamlit-app-url.streamlit.app
-(Replace with your deployed Streamlit Cloud URL)
 
 ## 📊 Data Sources
 The `data.zip` file contains the original datasets used in this project:
@@ -50,148 +45,134 @@ This project builds a transparent and data-driven methodology to:
 
 The final goal is to support sustainable, equitable energy solutions through measurable insights.
 
-## 🔬 Methodology
+## 📌 Project Overview
+NYC experiences significant disparities in electricity consumption across boroughs—especially within low-income, vulnerable communities. This project builds a transparent and data-driven methodology to:
 
+- ✅ Identify developments that exceed borough consumption norms  
+- ✅ Simulate expected usage and calculate potential savings  
+- ✅ Forecast long-term usage under multiple scenarios  
+- ✅ Prioritize funding for high-impact interventions  
+- ✅ Evaluate ROI for solar + battery installations  
+
+The final goal is to support sustainable, equitable energy solutions through measurable insights.
+
+---
+
+## 🔬 Methodology
 A clearly structured, multi-step methodology was used:
 
-1️⃣ Flagging Developments Exceeding Borough Norms
-✅ Vulnerability Assessment
+### 1️⃣ Flagging Developments Exceeding Borough Norms
 
-Boroughs with Median Household Income < $55,000 (e.g., BRONX) were classified as economically vulnerable.
+- ✅ **Vulnerability Assessment**  
+  Boroughs with **Median Household Income < $55,000** (e.g., BRONX) were classified as economically vulnerable.
 
-✅ Overconsumption Detection
+- ✅ **Overconsumption Detection**  
+  Developments were flagged as overconsuming if total KWH usage exceeded the borough’s average per-capita electricity consumption.
 
-Within each borough, developments were flagged as overconsuming if total KWH usage exceeded the borough’s average per-capita electricity consumption.
+---
 
-2️⃣ Simulating Expected Consumption & Potential Savings
-✅ Expected Consumption (Expected_KWH)
+### 2️⃣ Simulating Expected Consumption & Potential Savings
+
+- ✅ **Expected Consumption (Expected_KWH)**  
 Expected_KWH = Estimated Population × Borough Per Capita KWH
 
-✅ KWH Savings Calculation
+
+- ✅ **KWH Savings Calculation**  
 KWH_Saved = Actual Consumption – Expected_KWH
 
 
 This represents the annual savings potential if usage aligns with borough norms.
 
-3️⃣ Forecasting with Prophet (36-Month Projection)
+---
+
+### 3️⃣ Forecasting with Prophet (36-Month Projection)
 
 The Prophet model forecasts electricity demand under two scenarios:
 
-Business-as-Usual (current trend continues)
-
-Reduced Usage (after interventions & savings)
+- **Business-as-Usual**  
+- **Reduced Usage (after interventions & savings)**  
 
 These projections illustrate the long-term economic and environmental impact of targeted investment.
 
-💰 Key Results & Systemwide Impact
-✅ A. Potential Fund Generation
+---
+
+## 💰 Key Results & Systemwide Impact
+
+### ✅ A. Potential Fund Generation
 
 Total savings opportunity based on excess KWH and rate assumption ($0.25 / KWH):
 
-💰 $3,154,527,254.49
+**💰 $3,154,527,254.49**
 
-Support Fund Allocation
+**Support Fund Allocation (50%)**  
+➡️ **$1,577,263,627.24** for renewable energy installations.
 
-50% allocated to vulnerable communities:
+---
 
-➡️ $1,577,263,627.24 for renewable energy installations.
+### ✅ B. Prioritized Renewable Energy Projects
 
-✅ B. Prioritized Renewable Energy Projects
+A total of **34 developments** were selected based on:
 
-A total of 34 developments were selected based on:
-
-Vulnerability level
-
-Overconsumption severity
-
-KWH savings potential
+- Vulnerability level  
+- Overconsumption severity  
+- KWH savings potential  
 
 Each development receives:
-✅ Solar panels
-✅ Battery backup system
-(Estimated cost per site: $30,000)
+- ✅ Solar panels  
+- ✅ Battery backup system  
 
-✅ C. ROI Analysis
-⚡ Ultra-Fast Payback
+*(Estimated cost per site: $30,000)*
 
-Average payback period:
-➡️ 0.2 years (~2.4 months)
+---
 
-📈 Outstanding Annual ROI
+### ✅ C. ROI Analysis
 
-Average annual ROI:
-➡️ 2,374%+
+- ⚡ **Average Payback Period:** 0.2 years (~2.4 months)
+- 📈 **Average Annual ROI:** 2,374%+
 
-This demonstrates exceptionally strong financial and social returns from targeted investment.
+These results demonstrate exceptionally strong financial and social returns from targeted investment.
 
-✅ 📦 Output Files (Analysis Results)
+---
 
-This project generates several key output files used for forecasting, ROI modeling, dashboard visualization, and final reporting.
+## 📦 Output Files (Analysis Results)
 
-### 1. energy_efficiency_report_data.xlsx — Master Consolidated Report
+### 1. `energy_efficiency_report_data.xlsx` — Master Consolidated Report
+Contains:
+- All_Vulnerable_Devs  
+- Funded_Developments  
+- ROI_Analysis (KWH Saved, Cost, Payback, ROI)
 
-The primary data source for the dashboard and final report.
-It integrates vulnerability scoring, overconsumption tagging, savings simulation, and ROI metrics.
+### 2. `overconsuming_developments.csv` — Flagged High-Consumption Sites
+Columns:
+- Development Name  
+- Borough  
+- Consumption (KWH)  
+- Exceeds_Avg  
 
-Contains sheets:
+### 3. `simulated_savings_per_development.csv` — Estimated KWH Savings
+Columns:
+- Development Name  
+- Expected_KWH  
+- KWH_Saved  
+- Population  
 
-All_Vulnerable_Devs
-Developments in economically vulnerable boroughs with potential savings.
+---
 
-Funded_Developments
-Final prioritized list for solar + battery installations.
+## 📓 Notebooks
 
-ROI_Analysis
-Estimated KWH Saved, Support Cost (USD), Payback Period (Years), ROI (%).
+- `notebooks/Electric_Consumption_Analysis.ipynb`  
+Includes:
+- Data preprocessing  
+- Vulnerability analysis  
+- Overconsumption tagging  
+- Savings simulation  
+- Prophet forecasting  
+- Visualizations & exports  
 
-### 2. overconsuming_developments.csv — Flagged High-Consumption Sites
+---
 
-Generated after Methodology 1.
+## 🗂 Repository Structure
 
-Key Columns:
-
-Development Name
-
-Borough
-
-Consumption (KWH)
-
-Exceeds_Avg (True)
-
-This forms the baseline dataset for calculating potential savings.
-
-### 3. simulated_savings_per_development.csv — Estimated KWH Savings
-
-Generated after Methodology 2.
-
-Key Columns:
-
-Development Name
-
-Expected_KWH
-
-KWH_Saved
-
-Population
-
-This dataset feeds directly into fund allocation and ROI modeling.
-
-📓 Notebooks
-✅ notebooks/Electric_Consumption_Analysis.ipynb
-
-Contains the complete workflow:
-
-Data loading & preprocessing
-
-Vulnerability analysis
-
-Overconsumption tagging
-
-Savings simulation
-
-Prophet forecasting
-
-Visualizations & summary exports
 
 🗂 Repository Structure
 project/
