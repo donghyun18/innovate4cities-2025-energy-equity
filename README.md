@@ -4,7 +4,7 @@ Data-Driven Strategy for Sustainable Investment in Vulnerable NYC Communities
 This project analyzes municipal electricity consumption, demographic vulnerability, and future forecasting to build a data-driven investment framework for energy equity in New York City.
 Using a structured methodology, the analysis identifies overconsuming developments, simulates potential savings, forecasts long-term trends, and evaluates cost-effectiveness through ROI analysis.
 
-The final output includes:
+The final output includes:<br>
 ✅ An interactive Streamlit dashboard<br>
 ✅ A master Excel report<br>
 ✅ Forecasting results<br>
