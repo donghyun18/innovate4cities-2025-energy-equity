@@ -1,4 +1,4 @@
-🏙️ NYC Energy Equity Initiative
+## 🏙️ NYC Energy Equity Initiative
 Data-Driven Strategy for Sustainable Investment in Vulnerable NYC Communities
 
 This project analyzes municipal electricity consumption, demographic vulnerability, and future forecasting to build a data-driven investment framework for energy equity in New York City.
@@ -23,19 +23,21 @@ The `data.zip` file contains the original datasets used in this project:
 - **Electric_Consumption_data.csv** — NYC electricity usage dataset
 - **New_York_City_Population.csv** — Population & demographic dataset
 
-These datasets were used for:
+### These datasets were used for:
 - Energy burden analysis
 - Demographic correlation studies
 - Prophet-based future electricity consumption forecasting
 - Streamlit dashboard visualizations
 
 🔧 Technology Stack
-Category	Tools	Purpose
-Language	Python	Core data processing and analysis
-Libraries	Pandas, NumPy	Data manipulation and numerical operations
-Modeling	Prophet	Time-series forecasting for future consumption scenarios
-Visualization	Streamlit, Plotly	Building the interactive project dashboard
-📌 Project Overview
+| Category | Tools | Purpose |
+|---------|-------|----------|
+| Language | Python | Data analysis |
+| Libraries | Pandas, NumPy | Preprocessing |
+| Forecasting | Prophet | 36-month projection |
+| Visualization | Streamlit, Plotly | Dashboard |
+
+## 📌 Project Overview
 
 NYC experiences significant disparities in electricity consumption across boroughs—especially within low-income, vulnerable communities.
 This project builds a transparent and data-driven methodology to:
@@ -48,7 +50,7 @@ This project builds a transparent and data-driven methodology to:
 
 The final goal is to support sustainable, equitable energy solutions through measurable insights.
 
-🔬 Methodology
+## 🔬 Methodology
 
 A clearly structured, multi-step methodology was used:
 
